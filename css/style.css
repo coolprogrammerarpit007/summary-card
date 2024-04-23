@@ -1,0 +1,242 @@
+/* CSS BOILER PLATE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* End of css boiler plate */
+
+/* CSS STYLE GUIDE */
+
+/* ## Colors */
+
+/* ### Primary */
+
+/* - Light red: hsl(0, 100%, 67%) */
+/* - Orangey yellow: hsl(39, 100%, 56%) */
+/* - Green teal: hsl(166, 100%, 37%) */
+/* - Cobalt blue: hsl(234, 85%, 45%) */
+
+/* ## Gradients */
+
+/* - Light slate blue (background): hsl(252, 100%, 67%) */
+/* - Light royal blue (background): hsl(241, 81%, 54%) */
+
+/* - Violet blue (circle): hsla(256, 72%, 46%, 1) */
+/* - Persian blue (circle): hsla(241, 72%, 46%, 0) */
+
+/* ### Neutral */
+
+/* - White: hsl(0, 0%, 100%) */
+/* - Pale blue: hsl(221, 100%, 96%) */
+/* - Light lavender: hsl(241, 100%, 89%) */
+/* - Dark gray blue: hsl(224, 30%, 27%) */
+
+/* ### Notes */
+
+/* Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`. */
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+/* - Font size (paragraphs): 18px */
+
+/* ### Font */
+
+/* - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk) */
+/* - Weights: 500, 700, 800 */
+
+/* ************* Stying starts from here */
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  place-items: center;
+}
+
+/* Styling the summary Card */
+
+.summary-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid green; */
+  height: 50vh;
+  width: 90vh;
+}
+
+/* Styling the resut component */
+
+.result-component {
+  background-color: hsl(252, 100%, 67%);
+  height: 100%;
+  width: 43%;
+  border-radius: 2rem;
+}
+
+.result-container {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-text,
+.final-result,
+.result-review,
+.result-comparision {
+  text-align: center;
+}
+
+.result-text h3 {
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.final-result {
+  background-color: hsla(256, 72%, 46%, 1);
+  padding: 3.5rem;
+  border-radius: 50%;
+}
+
+.final-result h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 4.5rem;
+}
+
+.final-result p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.result-review {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.result-comparision {
+  width: 84%;
+}
+
+.result-comparision p {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+  word-wrap: break-word;
+}
+
+/* Styling the summary Component */
+
+.summary-component {
+  box-shadow: 10px 10px hsl(0, 0%, 100%);
+  height: 100%;
+  width: 55%;
+  border-radius: 2rem;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.summary-container {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3.7rem;
+}
+
+.summary-text h2 {
+  opacity: 0.7;
+}
+
+.summary-result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+}
+
+.summary-reaction-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid rosybrown; */
+  width: 100%;
+  background-color: hsl(241, 100%, 89%);
+  padding: 0.5rem 1.7rem;
+  border-radius: 0.8rem;
+}
+
+.summary-part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid saddlebrown; */
+}
+
+.summary-btn {
+  width: 100%;
+}
+
+.summary-btn button {
+  background: hsl(224, 30%, 27%);
+  width: 70%;
+  padding: 0.7rem;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 2.2rem;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+button:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+/* Making the mobile responsive design */
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+    background: hsl(252, 100%, 67%);
+  }
+  .summary-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .result-component {
+    width: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+  }
+  .summary-component {
+    width: 50%;
+  }
+
+  .summary-container {
+    justify-content: center;
+    align-items: center;
+    gap: 2.7rem;
+  }
+
+  .summary-btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Results summary component</title>
+
+    <!-- CSS LINK TAG -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="summary-card">
+      <div class="result-component">
+        <div class="result-container">
+          <div class="result-text">
+            <h3>Your Result</h3>
+          </div>
+          <div class="final-result">
+            <h1>76</h1>
+            <p>of 100</p>
+          </div>
+          <div class="result-review">
+            <h2>Great</h2>
+          </div>
+          <div class="result-comparision">
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="summary-component">
+        <div class="summary-container">
+          <div class="summary-text">
+            <h2>Summary</h2>
+          </div>
+          <div class="summary-result-container">
+            <div class="summary-reaction-container">
+              <div class="summary-part1">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="reaction img"
+                />
+                <h2>Reaction</h2>
+              </div>
+              <div class="summary-part2">
+                <p id="summary-score"><strong>80</strong>/100</p>
+              </div>
+            </div>
+            <div class="summary-reaction-container">
+              <div class="summary-part1">
+                <img src="./assets/images/icon-memory.svg" alt="memory img" />
+                <h2>Memory</h2>
+              </div>
+              <div class="summary-part2">
+                <p id="summary-score"><strong>92</strong>/100</p>
+              </div>
+            </div>
+            <div class="summary-reaction-container">
+              <div class="summary-part1">
+                <img src="./assets/images/icon-verbal.svg" alt="reaction img" />
+                <h2>Verbal</h2>
+              </div>
+              <div class="summary-part2">
+                <p id="summary-score"><strong>61</strong>/100</p>
+              </div>
+            </div>
+            <div class="summary-reaction-container">
+              <div class="summary-part1">
+                <img src="./assets/images/icon-visual.svg" alt="reaction img" />
+                <h2>Visual</h2>
+              </div>
+              <div class="summary-part2">
+                <p id="summary-score"><strong>72</strong>/100</p>
+              </div>
+            </div>
+          </div>
+          <div class="summary-btn">
+            <button id="summary-btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
